@@ -53,8 +53,8 @@ html, body{
 .tile {
   border: 2px solid rgb(211, 214, 218);
   color: black;
-  max-width: 64px;
-  max-height: 64px;
+  min-width: 64px;
+  min-height: 64px;
   margin: 2.5px;
   font-size: 36px;
   font-weight: bold;
