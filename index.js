@@ -81,7 +81,7 @@ function processinput(e) {
         else{
           currtile.classList.add("wrong");
           document.getElementById("Key"+letter.toUpperCase()).classList.add("wrong");
-          results += "⬛";
+          results += "⬜";
         }
       }
     }
@@ -100,7 +100,7 @@ function processlistener(){
   processinput(e);
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
   for (var i = 0; i < h; i++){
     for (var j = 0; j < w; j++){
       var tile = document.createElement("span");
@@ -115,7 +115,7 @@ window.onload = function() {
     keys[i].addEventListener("click", processlistener);
   }
   document.addEventListener("keyup", (e)=> {processinput(e)});
-}
+});
 
 function copyresults(){
   navigator.clipboard.writeText("CASCle 1 "+row.toString()+"/6 \n"+results);
