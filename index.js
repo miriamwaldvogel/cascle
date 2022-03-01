@@ -118,7 +118,7 @@ window.onload = function() {
 }
 
 function copyresults(){
-  navigator.clipboard.writeText("CASCle 1 "+row.toString()+"/6 "+results);
+  navigator.clipboard.writeText("CASCle 1 "+row.toString()+"/6 \n"+results);
 }
 
 var countdown = setInterval(function(){
